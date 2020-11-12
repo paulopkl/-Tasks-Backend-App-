@@ -1,0 +1,22 @@
+knex init
+
+knex migrate:make migration_name 
+
+knex migrate:list
+
+knex migrate:latest
+
+knex migrate:up 001_migration_name.js
+
+knex migrate:down 001_migration_name.js
+
+knex migrate:rollback
+knex migrate:rollback --all
+
+// TypeScript
+
+knex init -x ts
+
+knex migrate:make migration_name -x ts
+
+knex migrate:latest
