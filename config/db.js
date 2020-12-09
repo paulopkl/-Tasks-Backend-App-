@@ -4,4 +4,6 @@ const configKnex = knex(config.development); // Development mode
 
 configKnex.migrate.latest([config]);
 
+// configKnex.orderBy()
+
 module.exports = configKnex;
